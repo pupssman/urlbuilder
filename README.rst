@@ -1,5 +1,11 @@
 Urlbuilder
 ============
+
+
+.. image:: https://api.travis-ci.org/pupssman/urlbuilder.svg?branch=master
+        :alt: Build Status
+        :target: https://travis-ci.org/pupssman/urlbuilder/
+
 Simple helper to build URLs in python
 
 Usage example:
