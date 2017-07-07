@@ -6,6 +6,9 @@ Urlbuilder
         :alt: Build Status
         :target: https://travis-ci.org/pupssman/urlbuilder/
 
+.. image:: https://badge.fury.io/py/urlbuilder.svg
+        :target: https://badge.fury.io/py/urlbuilder
+
 Simple helper to build URLs in python
 
 Usage example:
