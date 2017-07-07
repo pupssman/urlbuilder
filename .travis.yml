@@ -1,0 +1,17 @@
+language: python
+env:
+- TOXENV=py27
+- TOXENV=py33
+- TOXENV=py34
+install: pip install tox
+script: tox
+notifications:
+  email: false
+deploy:
+  provider: pypi
+  user: pupssman
+  password:
+    secure: XqmkGVd34Z5i8KxO31/gvgJu+p3Kwfcj4V4Gx6Z2idr3u+kM8BeEIDsqyjHPP12e//9MHxAgw7wLEEEqkA9y3hOu5d8H+ANvTJVnrZFi/r7j8nS1RGwRzGlbBzza1HtsfmWKvgcgZu76nQMtuH4oaJzeifMZDf3Mk3LjQJu8CEnPkOZs0dlqrXUQuns9UoIumFh/ibzEOFZ5bHju8eTOiW1hNjaaapgEwCWXJ5SFc6r+BGtsKJ5o6XCu5odnIzuPeLNberDTvBYU9e9L+nhfHoHrmAquHUPwGPHtVlspBdxqhCevybnqXLZ+shOM8OwW6lzI4OnBHbG81l8gQJcRslqdni2oeuAimfWywJLFvi7n2kNcFcvO1bwBXPYvxduViENOGMPkMkSOlHkXbBXA1OSgBvJF0pqcyNyS1NZvkOQtOLD+FDdT1x9EAFkW31rLYdxtLA8idC+g38eI0ksuOtqgXfpDrU4SYl0EjTk7+BeI8dh/Dy755jmcQJ+gkvj5eNGKf0rES5RWpofgCIcvBja2L5DF1bJrg8zWs4t5SLNYEsAubF6OjYUFfYzAF8PoeEpIR81Oy3QrjkCgT2Aw+pVKqMtJCZqzpJWBLQ+oUawGp2tE8cicNEFMFctNbVVOt/vYkjStezyq/DtdmY+Bjz1aK6d2ZCyxnlAbjxaWJcU=
+  on:
+    tags: true
+    branch: master
